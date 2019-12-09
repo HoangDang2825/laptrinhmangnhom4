@@ -364,8 +364,8 @@ public class ClientCalculator extends javax.swing.JFrame {
                 case "/" : 
                     if (Integer.parseInt(number2)!=0) {
                         System.out.println("Ket qua tra ve tu server:");
-                        System.out.println(object.Chia(number1, number2));
-                        jTextField5.setText(object.Chia(number1, number2));
+                        System.out.println(ch.chia(Double.parseDouble(number1), Double.parseDouble(number2)));
+                        jTextField5.setText(String.valueOf(ch.chia(Double.parseDouble(number1), Double.parseDouble(number2))));
                     }else{
                         jLabel1.setText("Lỗi chia cho 0 xin vui lòng nhập lại !!!");
                         System.out.println("Lỗi chia cho 0 xin vui lòng nhập lại !!!");
